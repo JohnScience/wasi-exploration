@@ -9,6 +9,7 @@ This repository was born for the purpose of structuring my learning of WebAssemb
 ## Concepts
 
 * Command modules vs Reactor modules. See [Reactor modules support](#reactor-modules-support) for more details.
+* [WIT] file format. Wasm Interface Type (WIT) format is an IDL to provide tooling for the WebAssembly Component Model.
 
 ## Useful crates and repositories
 
@@ -68,3 +69,4 @@ See
 [no_std_with_wasi]: https://dev.to/thepuzzlemaker/nostd-with-wasi-is-more-complicated-than-i-thought-it-would-be-14j7
 [wasm_support_to_decathon]: https://engineering.linecorp.com/en/blog/adding-experimental-webassembly-support-to-decaton-part-2
 [wasm_micro_runtime]: https://anoopelias.github.io/posts/wasm-micro-runtime-with-rust/
+[WIT]: https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md
