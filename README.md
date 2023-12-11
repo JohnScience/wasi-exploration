@@ -1,4 +1,4 @@
-# WASM exploration
+# WASI exploration
 
 This repository was born for the purpose of structuring my learning of WebAssembly, specifically...
 
@@ -6,8 +6,15 @@ This repository was born for the purpose of structuring my learning of WebAssemb
 2. For [WASI interface] (`wasm32-wasi` cargo/rustc target);
 3. For [`wasmtime`] runtime.
 
+## Concepts
+
+* Command modules vs Reactor modules. See [Reactor modules support](#reactor-modules-support) for more details.
+
 ## Useful crates and repositories
 
+* [`cargo-wasi`] - A Cargo subcommand for convenient building and running of Rust programs for the `wasm32-wasi` target.
+* [`binaryen`] - Optimizer and compiler/toolchain library for WebAssembly.
+* [`wabt`] - WABT: The WebAssembly Binary Toolkit.
 * [`witx-codegen`] - A WITX code and documentation generator. WITX is a way to describe types and function interfaces for WebAssembly modules.
 
 ## Limitations
@@ -36,6 +43,9 @@ Even though there is a [`wasmedge_wasi_socket`] for [`wasmedge`], there is no su
 
 At the moment of writing, only some features of [`tokio`] are supported for `wasm32-wasi` target, namely 
 
+[`cargo-wasi`]: https://crates.io/crates/cargo-wasi
+[`binaryen`]: https://github.com/webassembly/binaryen
+[`wabt`]: https://github.com/WebAssembly/wabt
 [WASI interface]: https://wasi.dev/
 [`wasmtime`]: https://wasmtime.dev/
 ["WASI Command and Reactor Modules"]: https://dylibso.com/blog/wasi-command-reactor/
