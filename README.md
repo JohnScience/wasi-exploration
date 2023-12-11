@@ -13,11 +13,12 @@ This repository was born for the purpose of structuring my learning of WebAssemb
 ## Useful crates and repositories
 
 * [`cargo-wasi`] - A Cargo subcommand for convenient building and running of Rust programs for the `wasm32-wasi` target.
+* [`wasi`] - Raw API bindings to the WebAssembly System Interface (WASI), providing also `wasi_snapshot_preview1` but not [WASI snapshot preview2](https://github.com/nodejs/uvwasi/issues/59).
 * [`binaryen`] - Optimizer and compiler/toolchain library for WebAssembly.
 * [`wabt`] - WABT: The WebAssembly Binary Toolkit.
 * [`witx-codegen`] - A WITX code and documentation generator. WITX is a way to describe types and function interfaces for WebAssembly modules.
 
-## Limitations
+## Limitations and possible problems
 
 ### Reactor modules support
 
@@ -43,6 +44,10 @@ Even though there is a [`wasmedge_wasi_socket`] for [`wasmedge`], there is no su
 
 At the moment of writing, only some features of [`tokio`] are supported for `wasm32-wasi` target, namely 
 
+### `#[no_std]`  with WASI is tricky
+
+See ["`#![no_std]` with WASI is more complicated than I thought it would be"][no_std_with_wasi] article on Medium.
+
 [`cargo-wasi`]: https://crates.io/crates/cargo-wasi
 [`binaryen`]: https://github.com/webassembly/binaryen
 [`wabt`]: https://github.com/WebAssembly/wabt
@@ -56,3 +61,4 @@ At the moment of writing, only some features of [`tokio`] are supported for `was
 [WASI API proposal for managing sockets]: https://github.com/WebAssembly/wasi-sockets
 [Dave Bakker @badeend]: https://github.com/badeend
 [`tokio`]: https://tokio.rs/
+[no_std_with_wasi]: https://dev.to/thepuzzlemaker/nostd-with-wasi-is-more-complicated-than-i-thought-it-would-be-14j7
