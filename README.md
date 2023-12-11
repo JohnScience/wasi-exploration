@@ -42,11 +42,15 @@ Even though there is a [`wasmedge_wasi_socket`] for [`wasmedge`], there is no su
 
 ### Partial support of `wasm32-wasi` target by [`tokio`] asynchronous runtime
 
-At the moment of writing, only some features of [`tokio`] are supported for `wasm32-wasi` target, namely 
+At the moment of writing, only some features of [`tokio`] are supported for `wasm32-wasi` target, namely `sync`,`macros`, `io-util`, `rt`, `time`.
 
 ### `#[no_std]`  with WASI is tricky
 
-See ["`#![no_std]` with WASI is more complicated than I thought it would be"][no_std_with_wasi] article on Medium.
+See
+
+* ["`#![no_std]` with WASI is more complicated than I thought it would be"][no_std_with_wasi] article on Medium;
+* ["Adding experimental WebAssembly support to Decaton - Part 2"][wasm_support_to_decathon] article from LINE Engineering Blog;
+* ["WASM Micro Runtime with Rust"][wasm_micro_runtime] article by Anoop Alias.
 
 [`cargo-wasi`]: https://crates.io/crates/cargo-wasi
 [`binaryen`]: https://github.com/webassembly/binaryen
@@ -62,3 +66,5 @@ See ["`#![no_std]` with WASI is more complicated than I thought it would be"][no
 [Dave Bakker @badeend]: https://github.com/badeend
 [`tokio`]: https://tokio.rs/
 [no_std_with_wasi]: https://dev.to/thepuzzlemaker/nostd-with-wasi-is-more-complicated-than-i-thought-it-would-be-14j7
+[wasm_support_to_decathon]: https://engineering.linecorp.com/en/blog/adding-experimental-webassembly-support-to-decaton-part-2
+[wasm_micro_runtime]: https://anoopelias.github.io/posts/wasm-micro-runtime-with-rust/
