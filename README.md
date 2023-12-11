@@ -46,6 +46,7 @@ At the moment of writing, only some features of [`tokio`] are supported for `was
 [`cargo-wasi`]: https://crates.io/crates/cargo-wasi
 [`binaryen`]: https://github.com/webassembly/binaryen
 [`wabt`]: https://github.com/WebAssembly/wabt
+[`witx-codegen`]: https://crates.io/crates/witx-codegen
 [WASI interface]: https://wasi.dev/
 [`wasmtime`]: https://wasmtime.dev/
 ["WASI Command and Reactor Modules"]: https://dylibso.com/blog/wasi-command-reactor/
