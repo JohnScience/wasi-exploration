@@ -18,6 +18,7 @@ This repository was born for the purpose of structuring my learning of WebAssemb
 * [`binaryen`] - Optimizer and compiler/toolchain library for WebAssembly.
 * [`wabt`] - WABT: The WebAssembly Binary Toolkit.
 * [`witx-codegen`] - A WITX code and documentation generator. WITX is a way to describe types and function interfaces for WebAssembly modules.
+* [`wiggle`]  - Wiggle is a code generator for the host side of a witx interface. It is invoked as a Rust procedural macro. Wiggle is not specialized to any particular WebAssembly runtime. It is usable in at least Wasmtime and Lucet.
 
 ## Limitations and possible problems
 
@@ -70,3 +71,4 @@ See
 [wasm_support_to_decathon]: https://engineering.linecorp.com/en/blog/adding-experimental-webassembly-support-to-decaton-part-2
 [wasm_micro_runtime]: https://anoopelias.github.io/posts/wasm-micro-runtime-with-rust/
 [WIT]: https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md
+[`wiggle`]: https://crates.io/crates/wiggle
