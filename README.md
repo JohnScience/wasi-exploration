@@ -54,6 +54,7 @@ See
 * ["Adding experimental WebAssembly support to Decaton - Part 2"][wasm_support_to_decathon] article from LINE Engineering Blog;
 * ["WASM Micro Runtime with Rust"][wasm_micro_runtime] article by Anoop Alias.
 
+[`wasi`]: https://crates.io/crates/wasi
 [`cargo-wasi`]: https://crates.io/crates/cargo-wasi
 [`binaryen`]: https://github.com/webassembly/binaryen
 [`wabt`]: https://github.com/WebAssembly/wabt
