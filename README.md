@@ -13,7 +13,7 @@ This repository was born for the purpose of structuring my learning of WebAssemb
 
 ## Useful crates and repositories
 
-* [`cargo-wasi`] - A Cargo subcommand for convenient building and running of Rust programs for the `wasm32-wasi` target.
+* [`cargo-wasi`] - A Cargo subcommand for convenient building and running of Rust programs for the `wasm32-wasi` target. Beware that there is an open issue [#143](https://github.com/bytecodealliance/cargo-wasi/issues/143) about the archiving of `cargo-wasi`.
 * [`wasi`] - Raw API bindings to the WebAssembly System Interface (WASI), providing also `wasi_snapshot_preview1` but not [WASI snapshot preview2](https://github.com/nodejs/uvwasi/issues/59).
 * [`binaryen`] - Optimizer and compiler/toolchain library for WebAssembly.
 * [`wabt`] - WABT: The WebAssembly Binary Toolkit.
