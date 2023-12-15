@@ -23,6 +23,8 @@ This repository was born for the purpose of structuring my learning of WebAssemb
 * [`wabt`] - WABT: The WebAssembly Binary Toolkit.
 * [`witx-codegen`] - A WITX code and documentation generator. WITX is a way to describe types and function interfaces for WebAssembly modules.
 * [`wiggle`]  - Wiggle is a code generator for the host side of a witx interface. It is invoked as a Rust procedural macro. Wiggle is not specialized to any particular WebAssembly runtime. It is usable in at least Wasmtime and Lucet.
+* [`wat`] - Rust parser for the WebAssembly Text format, WAT. The result of parsing in this case is not an AST but a `u8`-string of WASM (`wat::Result<Cow<'_, [u8]>>`).
+* [`wast`] - A crate for low-level parsing of the WebAssembly text formats: WAT and WAST. Unlike [`wat`], this crate provides an AST for the parsed `.wat` and `.wasm` files.
 
 ## Limitations and possible problems
 
@@ -74,6 +76,8 @@ The author didn't find the official `.wit`/`.witx` files for `wasi_snapshot_prev
 [`binaryen`]: https://github.com/webassembly/binaryen
 [`wabt`]: https://github.com/WebAssembly/wabt
 [`witx-codegen`]: https://crates.io/crates/witx-codegen
+[`wat`]: https://crates.io/crates/wat
+[`wast`]: https://crates.io/crates/wast
 [WASI interface]: https://wasi.dev/
 [`wasmtime`]: https://wasmtime.dev/
 ["WASI Command and Reactor Modules"]: https://dylibso.com/blog/wasi-command-reactor/
