@@ -23,6 +23,7 @@ This repository was born for the purpose of structuring my learning of WebAssemb
 * [`wabt`] - WABT: The WebAssembly Binary Toolkit.
 * [`witx-codegen`] - A WITX code and documentation generator. WITX is a way to describe types and function interfaces for WebAssembly modules.
 * [`wiggle`]  - Wiggle is a code generator for the host side of a witx interface. It is invoked as a Rust procedural macro. Wiggle is not specialized to any particular WebAssembly runtime. It is usable in at least Wasmtime and Lucet.
+* [`wit-bindgen`] - Rust bindings generator and runtime support for WIT and the component model. Used when compiling Rust programs to the component model.
 * [`wat`] - Rust parser for the WebAssembly Text format, WAT. The result of parsing in this case is not an AST but a `u8`-string of WASM (`wat::Result<Cow<'_, [u8]>>`).
 * [`wast`] - A crate for low-level parsing of the WebAssembly text formats: WAT and WAST. Unlike [`wat`], this crate provides an AST for the parsed `.wat` and `.wasm` files.
 
@@ -66,9 +67,17 @@ Also see <https://github.com/JohnScience/wasi-hello-world> for an example of a `
 
 The author didn't find the official `.wit`/`.witx` files for `wasi_snapshot_preview2` in the official repository of the WASI interface. However, there is an archived [`preview2-prototyping`] repository in the Bytecode Alliance organization that contains the `.wit`/`.witx` files for `wasi_snapshot_preview2`.
 
-## Companies with experience in WASI
+## Companies and organizations with experience in WASI
 
+* [Bytecode Alliance](https://bytecodealliance.org/).
 * [Fastly](https://www.fastly.com/).
+* [Fermyon](https://www.fermyon.com/).
+* [Cosmonic](https://cosmonic.com/).
+* [Tetrate](https://tetrate.io/).
+* [Docker](https://www.docker.com/).
+* [Deislabs](https://deislabs.io/) (acquired by Microsoft).
+* [Second State](https://www.secondstate.io/).
+* [CNCF](https://www.cncf.io/).
 
 [`wasi`]: https://crates.io/crates/wasi
 [`cargo-wasi`]: https://crates.io/crates/cargo-wasi
@@ -76,6 +85,7 @@ The author didn't find the official `.wit`/`.witx` files for `wasi_snapshot_prev
 [`binaryen`]: https://github.com/webassembly/binaryen
 [`wabt`]: https://github.com/WebAssembly/wabt
 [`witx-codegen`]: https://crates.io/crates/witx-codegen
+[`wit-bindgen`]: https://crates.io/crates/wit-bindgen
 [`wat`]: https://crates.io/crates/wat
 [`wast`]: https://crates.io/crates/wast
 [WASI interface]: https://wasi.dev/
