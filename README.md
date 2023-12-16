@@ -11,7 +11,7 @@ This repository was born for the purpose of structuring my learning of WebAssemb
 * Evolution of WASI. WASI evolved from (outdated) `wasi_snapshot_preview0` to (currently-standard) `wasi_snapshot_preview1` to (experimental) `wasi_snapshot_preview2`.
 * Command modules vs Reactor modules in `wasi_snapshot_preview2`. See [Reactor modules support](#reactor-modules-support) for more details.
 * Guest vs Host. The guest code is the `wasm32-wasi` code that is executed by the host. The host is the runtime that executes the guest code. The host provides the guest with the WASI interface, links it if necessary etc.
-* [WIT] file format. Wasm Interface Type (WIT) format is an IDL to provide tooling for the WebAssembly Component Model.
+* [WIT] file format. Wasm Interface Type (WIT) format is an IDL to provide tooling for the WebAssembly Component Model. Two useful perspectives on WIT are provided in ["WebAssembly Interface Types: Interoperate with All the Things!"][wit-overview] article by Lin Clark and ["Reframing wit as primarily a machine format"][wit-as-machine-format] article by Yoshua Wuyts.
 
 ## Useful crates and repositories
 
@@ -79,6 +79,8 @@ The author didn't find the official `.wit`/`.witx` files for `wasi_snapshot_prev
 * [Second State](https://www.secondstate.io/).
 * [CNCF](https://www.cncf.io/).
 
+[wit-overview]: https://hacks.mozilla.org/2019/08/webassembly-interface-types/
+[wit-as-machine-format]: https://blog.yoshuawuyts.com/rethinking-wit-as-a-machine-format/
 [`wasi`]: https://crates.io/crates/wasi
 [`cargo-wasi`]: https://crates.io/crates/cargo-wasi
 [`cargo-component`]: https://crates.io/crates/cargo-component
